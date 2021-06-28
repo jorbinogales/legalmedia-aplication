@@ -1,0 +1,147 @@
+:root{
+    --bg-blue-dark:#00273f;
+    --bg-light:#acac9b;
+    --bg-gray-light:#e0e0db;
+    --bg-gray-bold:#b8b9b5;
+    --bg-white-color: #ffffff;
+    --font: 'Avenir';
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('./../fonts/Avenir.ttf');
+}
+
+
+header{
+    display: block;
+    width:100%;
+    height:auto;
+    background-color: var(--bg-blue-dark);
+    padding: 10px 5px;
+    border-bottom: 10px solid var(--bg-light);
+}
+
+header h1,
+header h2{
+    font-size: 20px;
+    display:block;
+    text-align: center;
+    color: var(--bg-white-color);
+    font-family: var(--font);
+}
+
+button{
+    background-color: var(--bg-blue-dark);
+    border:2px solid var(--bg-blue-dark);
+    font-family: var(--font);
+    padding: 5px 10px;
+    color:white;
+}
+
+
+button:hover{
+    cursor:pointer;
+    background-color: var(--bg-light);
+    transition: all .5s ease-in-out;
+    color: var(--bg-blue-dark);
+}
+
+button:disabled{
+    background:var(--bg-white-color);
+    color: var(--bg-blue-dark);
+    border: 2px solid var(--bg-blue-dark);
+    cursor:default;
+}
+
+button.radius-top-left{
+    border-top-left-radius: 25px;
+}
+
+button.radius-top-right{
+    border-top-right-radius: 25px;
+}
+
+button.radius-bottom-left{
+    border-bottom-left-radius: 25px;
+}
+
+button.radius-bottom-right{
+    border-bottom-right-radius: 25px;
+}
+
+.radius{
+    border-radius: 25px;
+}
+
+input[type="search"]{
+    background-color: var(--bg-gray-light);
+    border: 3px solid var(--bg-gray-bold);
+}
+
+
+
+.form{
+    background-color: var(--bg-blue-dark);
+    color:white;
+    display: block;
+    border: 3px solid var(--bg-white-color);
+    outline: none;
+    padding: 2px 5px;
+}
+
+.form:hover{
+    background-color: var(--bg-light);
+    color: var(--bg-blue-dark);
+    transition: all .5s ease-in-out;
+}
+
+.form:focus{
+    background:white;
+    border: 3px solid var(--bg-blue-dark);
+}
+
+
+.form-group{
+    position: relative;
+    border: 2px solid var(--bg-light);
+}
+
+.form-group label.text{
+    position:absolute;
+    margin-top:-35px;
+    font-size:18px;
+    color: var(--bg-blue-dark) !important;
+}
+
+.form-group label.icon{
+    position:absolute;
+    right: 20px;
+    top:7px;
+    font-size:20px;
+}
+
+#topSearch .logo{
+    display:block;
+    margin:auto;
+    max-width: 90px;
+}
+
+#topSearch h2{
+    font-family: var(--font);
+    color: var(--bg-blue-dark);
+    font-size:20px;
+    margin:20px 0px;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+    opacity: 0;
+}
+
+.show{
+    display: block !important;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
